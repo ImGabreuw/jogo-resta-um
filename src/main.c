@@ -3,7 +3,16 @@
 #include "board.h"
 #include "solver.h"
 
-int main()
+/*
+Integrantes:
+
+Enzo Ribeiro                 - 10418262 
+Gabriel Ken Kazama Geronazzo - 10418247 
+Lucas Zanini da Silva        - 10417361
+
+*/
+
+int main(void)
 {
     printf("Tabuleiro inicial:\n");
     print_board(board);

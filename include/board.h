@@ -3,6 +3,15 @@
 
 #define BOARD_SIZE 7
 
+/*
+Integrantes:
+
+Enzo Ribeiro                 - 10418262 
+Gabriel Ken Kazama Geronazzo - 10418247 
+Lucas Zanini da Silva        - 10417361
+
+*/
+
 extern int board[BOARD_SIZE][BOARD_SIZE];
 
 void print_board(int state[BOARD_SIZE][BOARD_SIZE]);

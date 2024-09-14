@@ -3,6 +3,15 @@
 
 #include "board.h"
 
+/*
+Integrantes:
+
+Enzo Ribeiro                 - 10418262 
+Gabriel Ken Kazama Geronazzo - 10418247 
+Lucas Zanini da Silva        - 10417361
+
+*/
+
 #define MAX_MOVES 31
 
 typedef struct {

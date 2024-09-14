@@ -3,6 +3,15 @@
 #include <stdio.h>
 #include <string.h>
 
+/*
+Integrantes:
+
+Enzo Ribeiro                 - 10418262 
+Gabriel Ken Kazama Geronazzo - 10418247 
+Lucas Zanini da Silva        - 10417361
+
+*/
+
 Move moves[MAX_MOVES];
 int move_count = 0;
 

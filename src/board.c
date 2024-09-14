@@ -1,5 +1,15 @@
 #include "board.h"
+
 #include <stdio.h>
+
+/*
+Integrantes:
+
+Enzo Ribeiro                 - 10418262 
+Gabriel Ken Kazama Geronazzo - 10418247 
+Lucas Zanini da Silva        - 10417361
+
+*/
 
 int row_directions[] = {-2, 2, 0, 0};
 int col_directions[] = {0, 0, -2, 2};
