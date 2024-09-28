@@ -10,6 +10,7 @@ Enzo Ribeiro                 - 10418262
 Gabriel Ken Kazama Geronazzo - 10418247 
 Lucas Zanini da Silva        - 10417361
 
+Código fonte: https://github.com/ImGabreuw/peg-solitaire-english-game
 */
 
 int main(void)
