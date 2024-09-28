@@ -6,8 +6,8 @@
 /*
 Integrantes:
 
-Enzo Ribeiro                 - 10418262 
-Gabriel Ken Kazama Geronazzo - 10418247 
+Enzo Ribeiro                 - 10418262
+Gabriel Ken Kazama Geronazzo - 10418247
 Lucas Zanini da Silva        - 10417361
 
 */
@@ -29,7 +29,9 @@ int solve(int steps)
             print_board(moves[i].state);
         }
 
+        printf("Tabuleiro final: \n");
         print_board(board);
+
         return 1;
     }
 
@@ -80,6 +82,6 @@ int solve(int steps)
             }
         }
     }
-    
+
     return 0;
 }
