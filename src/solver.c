@@ -3,6 +3,8 @@
 #include <stdio.h>
 #include <string.h>
 
+#include "log.h"
+
 /*
 Integrantes:
 
@@ -20,17 +22,17 @@ int solve(int steps)
     // Condição de parada: Se for feito 31 movimentos e restar apenas uma peça no centro, a solução foi encontrada
     if (steps == MAX_MOVES && board[3][3] == 1)
     {
-        printf("Solução encontrada:\n");
+        log_message("Solução encontrada:");
 
         for (int i = 0; i < move_count; i++)
         {
-            printf("Movimento da peça (%d, %d) para (%d, %d)\n",
-                   moves[i].from_row, moves[i].from_col, moves[i].to_row, moves[i].to_col);
-            print_board(moves[i].state);
+            log_message("Movimento da peça (%d, %d) para (%d, %d)",
+                        moves[i].from_row, moves[i].from_col, moves[i].to_row, moves[i].to_col);
+            log_board(moves[i].state);
         }
 
-        printf("Tabuleiro final: \n");
-        print_board(board);
+        log_message("Tabuleiro final:");
+        log_board(board);
 
         return 1;
     }

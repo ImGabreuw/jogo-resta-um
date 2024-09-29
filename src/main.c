@@ -2,6 +2,7 @@
 
 #include "board.h"
 #include "solver.h"
+#include "log.h"
 
 /*
 Integrantes:
@@ -15,14 +16,18 @@ Código fonte: https://github.com/ImGabreuw/peg-solitaire-english-game
 
 int main(void)
 {
-    printf("Tabuleiro inicial:\n");
-    print_board(board);
+    init_log_file();
+
+    log_message("Tabuleiro inicial:");
+    log_board(board);
 
     if (!solve(0))
     {
-        printf("Nenhuma solução encontrada.\n");
+        log_message("Nenhuma solução encontrada.");
         return 1;
     }
+
+    close_log_file();
 
     return 0;
 }

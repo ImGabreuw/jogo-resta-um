@@ -24,22 +24,6 @@ int board[BOARD_SIZE][BOARD_SIZE] = {
     {-1, -1, 1, 1, 1, -1, -1},
     {-1, -1, 1, 1, 1, -1, -1}};
 
-void print_board(int state[BOARD_SIZE][BOARD_SIZE])
-{
-    for (int row = 0; row < BOARD_SIZE; row++)
-    {
-        for (int col = 0; col < BOARD_SIZE; col++)
-        {
-            if (state[row][col] == -1)
-                printf("  ");
-            else
-                printf("%d ", state[row][col]);
-        }
-        printf("\n");
-    }
-    printf("\n");
-}
-
 int is_move_valid(int start_row, int start_col, int end_row, int end_col)
 {
     int middle_row = (start_row + end_row) / 2;
